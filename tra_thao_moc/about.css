@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200;1,400;1,500&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    cursor: pointer;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Bỏ background-image */
+    background-color: rgba(255, 255, 255, 0.5); /* Chỉ sử dụng background-color trong suốt */
+}
+#wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 35px;
+    color: black;
+    backdrop-filter: blur(4px);
+    margin-top: 10px;
+     background-color: rgb(225, 244, 233);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header h3 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+header .logo-container img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header nav .nav-links {
+    margin-right: 20px;
+}
+
+header nav .nav-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
+header nav .nav-links a:hover{
+    color: #1ca053;
+}
+
+header nav .login-link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 8px 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.login-link {
+    border: 2px solid #1ca053;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    background-color: #1ca053;
+}
+
+.login-link:hover {
+    background-color: #67e818;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.search-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.search-btn img {
+    width: 16px;
+    height: 16px;
+}
+/* Footer styles */
+footer {
+    background-color: #1ca053;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Đẩy footer xuống dưới cùng */
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    color: #67e818;
+}
+
+.social-icon {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.social-icon:hover {
+    color: #f0f0f0;
+}
+
+.zalo-icon {
+    width: 46px;
+    height: 46px;
+    vertical-align: middle;
+}
+
+main {
+    flex: 1;
+}
+
+/* CSS cho phần giới thiệu */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: transparent; /* Nền trong suốt cho phần giới thiệu */
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.section p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.search-container #benefits{
+
+
+}
+.tea{
+    background-image: url("img/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 70px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 0;
+}
+
+#hero {
+    background-image: url('tea-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 191px;
+    height: 40px;
+    margin-top:100px;
+    background:#1d1a1a;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-weight: bold;
+    border-radius: 20px;
+    transition:0.4s;
+}
+
+.btn:hover {
+    background-color: #556b2f;
+}
+
+.tea-type {
+    margin-bottom: 40px;
+}
+
+.tea-type h3 {
+    margin-top: 0;
+}
+
+#benefits h2 {
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+#benefits ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+#benefits ul li {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px;
+}
