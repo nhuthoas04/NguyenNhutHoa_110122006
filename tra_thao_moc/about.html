@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Trà Thảo Mộc</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Trà Thảo Mộc Logo">
+            <h3><a href="index.html">Trà Thảo Mộc</a></h3>
+        </div>
+        <nav>
+            <div class="nav-links">
+                <nav>
+                    <a href="index.html">Trang Chủ</a>
+                    <a href="products.html">Sản Phẩm</a>
+                    <a href="about.html">Giới Thiệu</a>
+                </nav>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm sản phẩm">
+                <button onclick="searchProducts()" class="search-btn"><img src="img/timkiem.png" alt="tìm kiếm"></button>
+            </div>
+            <a href="dang_nhap.html" class="login-link">Đăng Nhập</a>
+        </nav>
+    </header>
+<div class="section" id="about">
+   <section id="hero" id="types">
+        <div class="container">
+            <h1 class="tea">Khám phá hương vị tự nhiên</h1>
+            <p>Trà thảo mộc tinh tế từ thiên nhiên, mang đến trải nghiệm</p>
+            <p>thư giãn và sảng khoái.</p>
+            <button id="Switches" class="btn">Mua Liền</button>
+        </div>
+    </section>
+    <script>
+        document.getElementById('Switches').addEventListener('click', function() {
+            window.location.href = 'products.html';
+        });
+    </script>
+        <div>
+            <h2>Giới Thiệu Các Loại Trà Thảo Mộc</h2>
+            <div class="tea-type">
+                <img src="img/tra_cuc2.jpg" alt="Trà Hoàng Cúc">
+                <h3>Trà Hoàng Cúc Origanic</h3>
+                <p>Giúp thư giãn, tăng cường hệ miễn dịch và cải thiện giấc ngủ. Trà Hoàng Cúc còn có tác dụng chống viêm, 
+                làm dịu các cơn đau và căng thẳng thần kinh, giúp tăng cường sức khỏe tổng thể và cải thiện chất lượng giấc ngủ.</p>
+            </div>
+            <div class="tea-type">
+                <img src="img/tra_dau_biec2.jpg" alt="Trà Hoa Đậu Biếc">
+                <h3>Trà Hoa Đậu Biếc</h3>
+                <p>Chứa chất chống oxy hóa, giúp cải thiện trí nhớ và giảm căng thẳng. Trà Hoa Đậu Biếc còn hỗ trợ trong việc giảm cân,
+                làm đẹp da, tăng cường sức khỏe tim mạch và tăng cường sức đề kháng cho cơ thể nhờ vào các hợp chất flavonoid.</p>
+            </div>
+            <div class="tea-type">
+                <img src="img/tra_hoa_nhai1.jpg" alt="Trà Hoa Nhài">
+                <h3>Trà Hoa Nhài</h3>
+                <p>Thư giãn, giảm căng thẳng và cải thiện giấc ngủ. Trà Hoa Nhài còn có tác dụng chống oxy hóa, 
+                giúp thanh lọc cơ thể, tăng cường hệ miễn dịch và hỗ trợ tiêu hóa, mang lại cảm giác thư thái và an nhiên trong tâm hồn.</p>
+            </div>
+            <div class="tea-type">
+                <img src="img/tra_ich_nhan.jpg" alt="Trà Ích Nhãn">
+                <h3>Trà Ích Nhãn</h3>
+                <p>Bổ mắt, sáng mắt, giảm mỏi mắt, cải thiện thị lực, chống oxy hóa. 
+                Trà Ích Nhãn giúp tăng cường sức khỏe đôi mắt, bảo vệ mắt khỏi tác động của ánh sáng xanh và các yếu tố gây hại từ môi trường,
+                đồng thời cải thiện tuần hoàn máu và bảo vệ tế bào mắt.</p>
+            </div>
+            <div class="tea-type">
+                <img src="img/tra_kinh_an_to_nu1.jpg" alt="Trà Kinh An Tố Nữ">
+                <h3>Trà Kinh An Tố Nữ</h3>
+                <p>Giảm đau bụng kinh, bổ huyết, cân bằng nội tiết, thư giãn, tăng sức khỏe. 
+                Trà Kinh An Tố Nữ giúp giảm các triệu chứng tiền kinh nguyệt, hỗ trợ điều hòa kinh nguyệt và cải thiện sức khỏe sinh sản, 
+                đồng thời mang lại cảm giác thư giãn và cân bằng trong cơ thể.</p>
+            </div>
+            <div class="tea-type">
+                <img src="img/tra_giai_ruou_5vi.jpg" alt="Trà Thảo Mộc Giải Rượu 5 Vị">
+                <h3>Trà Thảo Mộc Giải Rượu 5 Vị</h3>
+                <p>Giải rượu, thanh lọc gan, giảm đau đầu, tăng cường sức khỏe, hỗ trợ tiêu hóa.
+                Trà Thảo Mộc Giải Rượu giúp làm giảm các triệu chứng say rượu, thúc đẩy quá trình giải độc gan, 
+                cải thiện chức năng gan và tăng cường sức khỏe tổng thể sau khi sử dụng rượu.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits">
+        <div class="container">
+            <h2>Lợi Ích</h2>
+            <ul>
+                <li>Chống Oxy Hóa</li>
+                <li>Cải Thiện Sức Khỏe Tim Mạch</li>
+                <li>Hỗ Trợ Tiêu Hóa</li>
+                <li>Làm Đẹp Da</li>
+            </ul>
+        </div>
+    </section>
+</div>
+<footer>
+    <div class="footer-content">
+        <p>Liên hệ: nhuthoas04@gmail.com | 0912534571</p>
+        <p>Kết nối social:
+            <a href="https://www.facebook.com/nhathoa.nguyen.1806" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/nhhoas_/" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://zalo.me/0912534571" class="social-icon" target="_blank">
+                <img src="img/zalo-logo.png" alt="Zalo" class="zalo-icon">
+            </a>
+        </p>
+        <p>&copy; Bản quyền thuộc về <a href="#">Nhựt Hóa</a></p>
+    </div>
+</footer>
+<script src="scripts.js"></script>
+</body>
+</html>

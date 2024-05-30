@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eaeaea;
+    font-family: 'Quicksand', sans-serif;
+    background-image: url('index.html') ;
+    backdrop-filter: blur(6px);
+    background-size: 100%;
+}
+
+main {
+    background: #f6f6f6;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    place-items: center;
+    width: 700px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-side {
+    height: 100%;
+    width: 100%;
+    background-image: url('img/gioi_thieu1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    pointer-events: none;
+}
+
+.right-side {
+    padding: 60px;
+    background: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    display: none;
+}
+
+form.active {
+    display: block;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+.btn {
+    background-color: #f6f6f6;
+    border: 2px solid #6b2780;
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    width: 48%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.btn:focus,
+.btn:hover {
+    transform: scale(0.97);
+    background-color: #000;
+    color: #eee;
+}
+
+.btn img {
+    width: 16px;
+    height: 16px;
+}
+
+.or {
+    position: relative;
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.or::before,
+.or::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background: #000;
+}
+
+.or::before {
+    left: 0;
+}
+
+.or::after {
+    right: 0;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #000;
+    outline: none;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 4px 0 18px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #6b2780;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.login-btn {
+    width: 100%;
+    background-color: #f6f6f6;
+    border: 2px solid #6b7280;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 10px 0;
+    margin: 12px 0 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #000;
+    color: #eee;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a {
+    color: #000;
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0d85b9;
+}

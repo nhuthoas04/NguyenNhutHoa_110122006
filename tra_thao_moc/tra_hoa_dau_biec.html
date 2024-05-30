@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm Nổi Bật</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo.png">
+    <link rel="stylesheet" href="sanpham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Trà Thảo Mộc Logo">
+            <h3><a href="index.html">Trà Thảo Mộc</a></h3>
+        </div>
+        <nav>
+            <div class="nav-links">
+                <a href="index.html">Trang Chủ</a>
+                <a href="products.html">Sản Phẩm</a>
+                <a href="about.html">Giới Thiệu</a>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm sản phẩm">
+                <button onclick="searchProducts()" class="search-btn"><img src="img/timkiem.png" alt="tìm kiếm"></button>
+            </div>
+            <a href="dang_nhap.html" class="login-link">Đăng Nhập</a>
+        </nav>
+    </header>
+    <main>
+              <div class="product-detail-container">
+            <div class="product-detail-card">
+                <img src="img/tra_dau_biec.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h1>Trà Hoa Đậu Biếc Khô</h1>
+                    <p class="description">Chống oxy hóa, cải thiện trí nhớ, giảm lo âu, hỗ trợ tim mạch.</p>
+                   <p class="price">209,000 VND</p> 
+                    <button class="buy-btn">Mua Ngay</button>
+                </div>
+            </div>
+            <div class="product-details">
+                <h2>Chi Tiết Sản Phẩm</h2>
+                <ul>
+                    <li>Thành phần:  100% hoa đậu biếc tươi sấy lạnh</li>
+                    <li>Trọng lượng: Gói 200g</li>
+                    <li>Hạn sử dụng: 12 tháng kể từ ngày sản xuất</li>
+                    <li>Bảo quản: Nơi khô ráo, thoáng mát</li>
+                    <li>Xuất xứ: Việt Nam</li>
+                </ul>
+            </div>
+        </div>
+        <h2>Sản phẩm liên quan </h2>
+        <div class="sanphamlienquan">
+            <div class="products">
+                
+                  <div class="product" onclick="openModal('Trà Hoàng Cúc Organic', 'img/tra_cuc.jpg', 'Trà thảo mộc hoa cúc giúp thư giãn và cải thiện giấc ngủ.')">
+                   <a href="./tra_hoa_cuc.html">  <img src="img/tra_cuc.jpg" alt="Trà Hoàng Cúc">
+                   <h3>Trà Hoàng Cúc Organic</h3>
+                    <p>Trà thảo mộc hoa cúc giúp thư giãn và cải thiện giấc ngủ.</p></a>
+                    <p class="price">279,000 VND</p>
+                    <button onclick="window.location.href='./tra_hoa_cuc.html';">Mua Ngay</button>
+                </div>
+               
+                
+                <div class="product">
+                   <a href="./tra_hoa_nhai.html">  <img src="img/tra_hoa_nhai2.jpg" alt="Trà Hoa Nhài (Nụ Hoa Lài)">
+                     <h3>Trà Hoa Nhài (Nụ Hoa Lài)</h3>  
+                    <p>Thư giãn, giảm căng thẳng, cải thiện giấc ngủ, chống viêm.</p></a>
+                    <p class="price">159,000 VND</p>
+                    <button onclick="window.location.href='./tra_hoa_nhai.html';">Mua Ngay</button>
+                </div>
+                
+              
+                <div class="product">
+                  <a href="./tra_hoa_dau_biec.html">   <img src="img/tra_dau_biec.jpg" alt="Trà Hoa Đậu Biếc Khô"> 
+                  <h3>Trà Hoa Đậu Biếc Khô</h3>
+                    <p>Chống oxy hóa, cải thiện trí nhớ, giảm lo âu, hỗ trợ tim mạch.</p></a>
+                    <p class="price">209,000 VND</p>
+                    <button onclick="window.location.href='./tra_hoa_dau_biec.html';">Mua Ngay</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Liên hệ: nhuthoas04@gmail.com | 0912534571</p>
+            <p>Kết nối social:
+                <a href="https://www.facebook.com/nhathoa.nguyen.1806" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/nhhoas_/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://zalo.me/0912534571" class="social-icon" target="_blank">
+                    <img src="img/zalo-logo.png" alt="Zalo" class="zalo-icon">
+                </a>
+            </p>
+            <p>&copy; Bản quyền thuộc về <a href="#">Nhựt Hóa</a></p>
+        </div>
+    </footer>
+<script src="products.js"></script>
+</body>
+</html>
